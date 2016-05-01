@@ -1,0 +1,76 @@
+.picture_and_title 
+{
+    border-top: 6px solid #DE6B48;
+    margin :0px;
+    margin-bottom: 10px;
+    float:left;
+    width: 80%;
+}
+
+.picture_and_title img
+{
+    margin: 5px;
+    display:inline-block;
+    border: 2px solid #DE6B48;
+}
+.picture_and_title h2
+{
+    margin :0px;
+     border-bottom: 1px solid #DE6B48;
+    display:inline-block;
+    text-align: center;
+    vertical-align:middle;
+}
+.related_games
+{
+    border-top: 6px solid #DE6B48;
+    border-left: 3px solid #DE6B48;
+    margin: 0px;
+    width: 20%;
+    float:right;
+}
+
+.related_games h2
+{
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+    border-bottom: 1px solid #DE6B48;
+    width:100%;
+   
+}
+.related_games ul
+{
+    padding: 0px;
+   list-style-type: none;
+   text-align: center;
+}
+.related_games ul li
+{
+   margin: 0px 0px 10px 0px;
+}
+.related_games a 
+{
+ color: black;   
+ text-align: center;
+ font-weight: bold;
+}
+
+.game_and_description
+{
+
+}
+
+.game_and_description h3
+{
+    width: 80%;
+    padding-left: 10px;
+    border-bottom: 1px solid #DE6B48;
+}
+
+.game_and_description p
+{   
+    font-size: 20px;
+    margin-left: 5px;
+    width: 80%;
+}
+

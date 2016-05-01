@@ -1,0 +1,30 @@
+[
+  {
+    "id":0,
+    "gThumb":"gameThumbs/WoodventureTeaser.jpg"
+  },
+  {
+    "id":1,
+    "gThumb":"gameThumbs/PowerMahjongTheJourneyTeaser.jpg"
+  },
+  {
+    "id":2,
+    "gThumb":"gameThumbs/MonsterjongTeaser.jpg"
+  },
+  {
+    "id":3,
+    "gThumb":"gameThumbs/TreasureLinkTeaser.jpg"
+  },
+  {
+    "id":4,
+    "gThumb":"gameThumbs/MahjongTeaser.jpg"
+  },
+  {
+    "id":5,
+    "gThumb":"gameThumbs/PowerMahjongTeaser.jpg"
+  },
+  {
+    "id":6,
+    "gThumb":"gameThumbs/AnimalsConnectTeaser.jpg"
+  }
+]

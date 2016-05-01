@@ -1,0 +1,36 @@
+.home_content
+{
+    
+}.home_content h2
+{
+    text-align: left;
+}
+
+.home_content ul
+{
+   list-style-type: none;
+}
+
+.home_content ul li
+{
+    text-align: center;
+    display: inline-block;
+    border-left: 1px solid #DE6B48;
+    border-right: 1px solid #DE6B48;
+    border-bottom: 1px solid #DE6B48;
+}
+
+#gameLink
+{
+    text-align: left;
+    font-weight: bold;
+}
+#gameLink p {
+    
+    margin-bottom: 0px;
+}
+.home_content a {
+    
+    text-align: right;
+    font-size:  12px;
+}

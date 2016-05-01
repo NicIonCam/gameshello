@@ -1,0 +1,11 @@
+
+<h2> {{pageView}} </h2>
+
+<ul> 
+    <li ng-repeat="game in specificList"> 
+        <a href="#category/{{pageView}}/game/{{game.id}}"> 
+            <img class="img-thumbnail img-responsive" ng-src="/assets/{{game.gThumb}}">
+            <p> {{game.title}} </p>
+          </a>
+    </li>
+</ul>

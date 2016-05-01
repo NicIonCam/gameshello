@@ -1,0 +1,24 @@
+
+<div class="picture_and_title">
+    <img ng-src="/assets/{{Game.thumb}}" height="50px" width="=50px">
+    <h2> {{Game.title}} </h2>
+</div>
+    
+<div class ="related_games" >
+    <h2> Related games</h2>
+    <ul>
+       <li ng-repeat="related in relatedGames"> <a href="#category/{{related.category}}/game/{{related.id}}">  
+           <img class="img-thumbnail" ng-src="/assets/{{related.gThumb}}">
+           <p>{{related.title}}</p>
+           </a>
+        </li>
+    </ul>
+</div>    
+
+<div class="game_and_description">
+       <div ng-bind-html="gameFrame">
+         <!-- <iframe allowfullscreen width="80%" height="600px" src="{{scope.gameUrl}}"></iframe> -->
+       </div>
+    <h3> Description</h3>
+    <p> {{Game.description}}</p>
+</div>

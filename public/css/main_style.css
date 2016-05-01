@@ -1,0 +1,128 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    overflow-y:scroll;
+    background-color: #F5F3EE;
+}
+
+body{
+    background-color: #FFFFFF;
+    border-left: 3px solid #DE6B48;
+    border-right: 3px solid #DE6B48;
+    border-bottom: 3px solid #DE6B48;
+}
+.container{
+    
+padding: 0px;
+}
+.header_block
+{
+}
+
+.header_block table{
+    
+    background-color: #DE6B48;
+    
+}
+
+.menu_content {
+    
+    border-left: 3px solid #DE6B48;
+    border-top: 6px solid #DE6B48;
+    background-color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+    width:20%;
+    float:right;    
+}
+.menu_content ul{
+    
+    padding: 0px 0px 0px 5px;
+    list-style-type: none;
+}
+.menu_content h2{
+    
+   border-bottom: 1px solid #DE6B48;    
+   background-color: #FFFFFF;
+   margin: 0px;
+   padding: 0px;
+}
+.menu_content ul 
+{
+    padding: 0px;
+    
+}
+.menu_content ul li a {
+    
+    width: inherit;
+    display: block;
+    padding-left: 10px;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu_content ul li:hover {
+    
+    text-decoration:underline;
+    background-color: #DE6B48;
+}
+
+.content_page 
+{
+    padding: 0px;
+    margin: 0px;
+    
+}
+.facebook_buttons 
+{
+    margin: 0px;
+}
+.facebook_buttons div
+{
+    margin-top: 5px;
+}
+
+.search_controller
+{
+   
+}
+.search_controller div
+{
+  position: relative;
+}
+
+.search_controller div ul
+{
+    position: absolute;
+    width: inherit;
+    background-color: #F5F3EE;
+    opacity: 0.8;
+    padding: 0px;
+    display:block;
+}
+
+.search_controller div ul li
+{
+    text-align: left;
+    list-style-type: none;
+}
+
+.search_controller div ul li a
+{
+    font-size:medium;
+    display: block;
+    color: black;
+}
+
+.search_controller div ul li a:hover
+{
+background-color: #2B2B2B;
+    color: white;
+}
+
+
+

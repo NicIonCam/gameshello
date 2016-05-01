@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html ng-app="appUsed">
+    <head>
+        <!-- CSS LINK -->
+        <link rel="stylesheet" type = "text/css" href = "assets/css/allcss.css">
+         <!-- META -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Free Web Mobile Games">
+		<meta name="keywords" content="mobile,web,games,free,action,cards,arcade,girls,jump,run,puzzle,quiz,skill">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Games Hello</title>
+    </head>    
+
+ <!--Body page-->
+    <body class= "container">
+<!-- Header block -->
+ <div class="header_block">
+        <table class="table well well-sm" style="margin-bottom:0px">
+            <tr>
+                <td rowspan="=2" class="col-md-1 col-sm-1 col-lg-1"> 
+                    <div >
+                        <a href ="/"><img src="assets/img/logo.png" width="100px" height="50px"></a>
+                    </div>
+                </td>    
+ <!-- Search -->
+                <td class="search_controller" ng-controller="searchFilter">
+                    <div>
+                         <input type="text" class="search-query form-control" ng-model="searchName" placeholder="Search">
+                   </div>
+                    <div  class="col-md-6 col-sm-6 col-lg-12" style="padding:0px">
+                   <ul>
+                        <li ng-if="searchName" ng-repeat="game in filteredGames  track by $index | limitTo:10">
+                         <a href="#category/{{game.category}}/game/{{game.id}}" ng-click="clearSearch()">{{game.gTitle}}</a>
+                       </li>
+                    </ul>
+                    </div> 
+                 </td>
+<!-- Social networks -->   
+                <td class="col-md-6 col-sm-2 col-lg-4">
+                    <div class="facebook_buttons">
+                    <div  class="fb-follow" data-href="https://www.facebook.com/gameshello" data-layout="button" data-show-faces="false"></div>
+                    <div class="fb-share-button" data-href="https://www.facebook.com/gameshello" data-layout="button"></div>
+                    </div>
+                </td>
+            </tr>         
+        </table>
+ <!-- Other features soon             
+        <table class="table  well well-sm">
+        <tr class= "col-md-12">
+            <td style="text-align=center">
+            <p> Enjoy Free Games for Mobile, Tablets and Browsers</p>
+            </td>    
+         </tr>    
+        </table>    -->
+</div > 
+    <!-- Content page -->
+<div ui-view="game-view" >
+     <div class="content_page">
+
+        <!-- Menu content -->
+        <div class="menu_content" ng-controller="categoryShower">
+            <h2 class="well well-sm"> Categories </h2>
+            <ul>
+                    <li ng-repeat="cat in categories"> <a href="#category/{{cat}}"> {{cat}}</a> </li> 
+            </ul>
+        </div>
+          <!--Games content -->
+         <div  class="games_content" ui-view="filtered-games">
+                
+           <!-- Home content  -->
+         <div  class="home_content" ui-view="home-page">
+        </div>  
+        </div>
+    </div>
+
+</div>   
+         <!-- Scripts -->
+
+       <script src="assets/js/lib/angular.js"></script>
+       <script src="assets/js/lib/angular-ui-router.js"></script>
+       <script src="assets/js/lib/angular-sanitize.js"></script>
+       <script  src="assets/js/ang-app.js"> </script>
+        <script src="assets/js/directives.js"> </script>
+       <script  src="assets/js/controllers.js"> </script>
+       <script  src="assets/js/social/socialnetworks.js"> </script>
+       <script  src="assets/js/social/analysticstracking.js"> </script>  
+    </body>
+
+</html>

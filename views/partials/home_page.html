@@ -1,0 +1,14 @@
+<h2> News </h2>
+<ul>
+    <li  ng-repeat="game in NewsGames track by $index">
+
+        <a id="gameLink"href="#category/{{game.category}}/game/{{game.id}}"> 
+         <img class="img-thumbnail img-responsive" ng-src="/assets/{{game.thumb}}"> 
+         <p>{{game.title}}</p>
+         </a>
+         <a href="#category/{{game.category}}">
+         <p>> {{game.category}} </p>
+         </a>
+        </a>
+    </li>
+</ul>    

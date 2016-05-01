@@ -1,0 +1,39 @@
+
+.games_content {
+    
+    border-top: 6px solid #DE6B48;
+    background-color: #FFFFFF;
+    width:80%;
+    float: left;
+}
+.games_content h2{
+    
+    padding-left: 10px;
+    border-bottom: 1px solid #DE6B48;
+}
+.games_content ul
+{
+   list-style-type: none;
+    padding: 0px;
+    text-align: center;
+    
+}
+
+.games_content li
+{
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+}
+.games_content a
+{
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+}
+.games_content a p
+{
+    padding-left : 10px;
+    
+}
